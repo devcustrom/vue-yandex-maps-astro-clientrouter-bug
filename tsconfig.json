@@ -1,0 +1,17 @@
+{
+  "extends": "astro/tsconfigs/strict",
+  "include": [
+    ".astro/types.d.ts",
+    "**/*"
+  ],
+  "exclude": [
+    "dist"
+  ],
+  "compilerOptions": {
+    "jsx": "preserve",
+    "typeRoots": [
+      "./node_modules/@types",
+      "./node_modules/@yandex/ymaps3-types"
+    ]
+  }
+}
